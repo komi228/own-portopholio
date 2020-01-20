@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>juklo</title>
+	</head>
+	<body>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.title{
+				text-align: center;
+				background-color: darkcyan;
+				color: white;
+			}
+			h1{
+				font-size: 2.5rem;
+				line-height: 2.7em;
+			}
+			.flip-card{
+				width: 300px;
+				height: 450px;
+				margin: auto;
+			}
+			.flip-card-back{
+				background-color: brown;
+				color: burlywood;
+				transform: rotateY(180deg);
+				z-index: 1;
+			}
+			.flip-card-back .back-header{
+				height: 45%;
+				text-align: center;
+			}
+			.flip-card-back .back-header img{
+				width: 50%;
+				margin-top: 20px;
+			}
+			.flip-card-inner{
+				position: relative;
+				height: 100%;
+				transition: transform 0.6s;
+				transform-style: preserve-3d;
+			}
+			.flip-card-back, .flip-card-front{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.flip-card:hover .flip-card-inner{
+				transform: rotateY(180deg);
+			}
+		</style>
+		<div class="title">
+			<h1 class="">flip-card</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tenetur itaque</p>
+		</div>
+		<div class="d-flex">
+			<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/komi.jpg"  width="300px" alt="">
+				</div>
+				<div class="flip-card-back">
+					<div class="back-header">
+						<img src="img/komi.jpg"  width="300px" alt="">
+					</div>
+					<div class="back-footer">
+						<h2>One plus 6T</h2>
+						<p>Miror Block,8gb ram, 128gb</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/komi.jpg"  width="300px" alt="">
+				</div>
+				<div class="flip-card-back">
+					<div class="back-header">
+						<img src="img/komi.jpg"  width="300px" alt="">
+					</div>
+					<div class="back-footer">
+						<h2>One plus 6T</h2>
+						<p>Miror Block,8gb ram, 128gb</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="img/komi.jpg"  width="300px" alt="">
+				</div>
+				<div class="flip-card-back">
+					<div class="back-header">
+						<img src="img/komi.jpg"  width="300px" alt="">
+					</div>
+					<div class="back-footer">
+						<h2>One plus 6T</h2>
+						<p>Miror Block,8gb ram, 128gb</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+	</body>
+</html>

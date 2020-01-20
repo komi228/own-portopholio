@@ -1,0 +1,176 @@
+.text-indigo{
+	color: indigo !important;
+}
+.bg-violet{
+	background-color: indigo;
+}
+.border-bottom-indigo{
+	border-bottom: 4px solid darkred;
+}
+.banner{
+	height: 360px;
+}
+.under-4{
+	border-bottom: 3em;
+	border-color: black;
+}
+.describe{
+	background-color: aliceblue;
+	box-shadow: 2 35px 22px black;
+}
+/*.content{
+	<!--height: 410px;-->
+
+}*/
+.imagebox{
+	height: 410px;
+	background: url(img/amin.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.caroussel img{
+	height: 410px;
+}
+.desc{
+	display: block;
+	height: 190px;
+}
+.desc-image img{
+	width: 220px;
+	height: 190px;
+}
+.desc-main{
+	align-self: center;
+}
+.desc p{
+	padding: 2px 4px;
+	font-size: 1.2rem;
+}
+.f-content{
+	margin-right: 12%;
+	margin-left: 12%; 
+}
+.social a{
+	color: indigo;
+	background-color: white;
+	font-size: 2.1em;
+	text-decoration: none;
+	border-radius: 50%;
+}
+.social a:hover{
+	color: white;
+	background: -webkit-linear-gradient(bottom left, red, blue);
+	background: -o-linear-gradient(bottom left, red, blue);
+	background: linear-gradient(to top right, red, blue);
+}
+.footer button:hover{
+	background: -webkit-linear-gradient(bottom left, red, blue);
+	background: -o-linear-gradient(bottom left, red, blue);
+	background: linear-gradient(to top right, red, blue);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.active{
+		border-bottom: 4px solid darkred;
+	}
+	.nav-item:hover{
+		background-color: rgba(99, 149, 239, 0.79);
+		border-bottom: 4px solid darkred;
+		padding-right: 4px;
+	}
+	#QuiSuisJe{
+		display: block;
+	}
+	img{
+		width: 320px;
+		height: 420px;
+		margin-bottom: 20px;
+	}
+	.contact,.message,.formation{
+		width: 320px;
+		margin-top: 10px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.active{
+		border-bottom: 4px solid darkred;
+	}
+	.active,.nav-item:hover{
+		border-bottom: 4px solid darkred;
+	}
+	#QuiSuisJe{
+		display: flex;
+	}
+	
+	img{
+		width: 320px;
+		height: 420px;
+	}
+	.contact,.message,.formation{
+		width: 320px;
+		margin-top: 10px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.active,.nav-item:hover{
+		border-bottom: 4px solid darkred;
+	}
+	#QuiSuisJe{
+		display: flex;
+	}
+	img{
+		width: 400px;
+		height: auto;
+	}
+	.contact,.message,.formation{
+		width: 300px;
+		margin-top: 10px;
+	}
+	.desc{
+		display: block;
+		height: 200px;
+	}
+	.desc-image img{
+		width: 320px;
+		height: 210px;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.desc{
+		display: block;
+		height: 190px;
+	}
+	.desc-image img{
+		width: 200px;
+		height: 190px;
+	}
+	
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	img{
+		width: 500px;
+		height: auto;
+	}
+	.contact,.message,.formation{
+		width: 320px;
+		margin-top: 10px;
+	}
+	.desc{
+		display: block;
+		height: 190px;
+	}
+	.desc-image img{
+		width: 220px;
+		height: 190px;
+	}
+}
